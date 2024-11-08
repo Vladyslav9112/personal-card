@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+.wrapper {
+  font-family: Arial, sans-serif;
+  background-color: hsl(210, 36%, 96%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.business-card {
+  display: flex;
+  border-radius: 50px;
+  width: 950px;
+  height: 440px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  font-size: 25px;
+  transition: transform 0.5s ease;
+  transform-origin: center;
+  will-change: transform;
+}
+
+.business-card:hover {
+  transform: translate(0px, 0px) scale(0.9) rotate(2deg);
+}
+
+.bussiness-card__photo {
+  padding-right: 20px;
+}
+
+.img {
+  border-radius: 50%;
+  width: 400px;
+  height: 420px;
+}
+
+.bussiness-card__info {
+  border-radius: 10px;
+  height: 420px;
+  width: 550px;
+}
+
+.name {
+  color: hsl(200, 15%, 8%);
+  padding-top: 25px;
+  padding-bottom: 30px;
+  font-weight: bold;
+}
+
+.contact__info li {
+  padding-top: 15px;
+  color: rgba(50, 50, 50, 0.8);
+}
+
+.bio {
+  padding-top: 50px;
+  color: hsla(0, 0%, 20%, 0.9);
+}
+
+.business-card:active {
+  transform: translate(0px, 0px) scale(0.98) rotate(-2deg);
+  transition: transform 0.5s ease;
+}
